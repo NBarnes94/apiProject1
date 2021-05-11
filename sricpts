@@ -1,0 +1,49 @@
+const baseURL = "https://pokeapi.co/api/v2/pokemon/";
+let url;
+
+const searchNum = document.querySelector('#search');
+const submitBtn = document.querySelector('.submit');
+const submitSearch = document.querySelector('form');
+submitSearch.addEventListener('submit', fetchPokemon)
+
+
+url = baseURL + searchNum.value
+
+
+function fetchPokemon(){
+    fetch(baseURL)
+    .then((results) =>{
+        return results.json();
+    })
+    .then((submission) =>{
+        console.log(submission);
+        console.log(searchNum.value);
+        console.log(url);
+    })
+    .catch(err => console.log(err))
+}
+
+// function fetchPicture(){
+// fetch(`${url}.url`)
+//     .then(results=>{
+//         return results.json();
+//     })
+//         .then(submission =>{
+//             console.log(submission)
+//         })
+// }
+
+// function displayPoke(){
+//     let pokeFriend = `${url}.sprites.other.official-artwork`;
+//     console.log(pokeFriend);
+//     let tinyPokeFried = url.response.sprites.front_default;
+//     let img = document.querySelector('image');
+//     if(pokeFriend.length === 1){
+//         nav.style.display = 'block';
+//         img.src = pokeFriend;
+//     } else {
+//         nav.style.display = 'block;'
+//         img.src = tinyPokeFried;
+
+//     }
+// }
