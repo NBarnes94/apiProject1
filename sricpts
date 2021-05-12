@@ -47,3 +47,12 @@ function fetchPokemon(){
 
 //     }
 // }
+
+fetch(pokeFriend){
+        .then(results =>{
+            return results.json();
+        })
+            .then(pokePicture=>{
+                console.log(pokePicture);
+            })
+    }
