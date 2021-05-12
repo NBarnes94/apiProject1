@@ -1,0 +1,43 @@
+body{
+    background-color: brown;
+    color: white;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    display: inline;
+}
+p{
+    margin-bottom: 0;
+}
+form{
+    text-align: center;
+    font-size: 40px;
+    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
+}
+
+.submit{
+    padding-left: 10p;
+    transform: scale(2);
+}
+.searchBox{
+    margin-bottom: 0;
+}
+.displayResults{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.name{
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: aliceblue;    
+}
+.image{
+    
+}

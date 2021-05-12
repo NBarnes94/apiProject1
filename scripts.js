@@ -1,4 +1,4 @@
-const baseURL = "https://pokeapi.co/api/v2/pokemon/";
+const baseURL = "https://pokeapi.co/api/v2/pokemon?limit=898/";
 const picUrl = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/' 
 let url;
 let pokeUrl;
@@ -12,13 +12,13 @@ submitSearch.addEventListener('submit', fetchPokemon)
 
 
 
-
+img.style.display = 'none';
 
 function fetchPokemon(e){
     e.preventDefault();
     url = baseURL + searchNum.value;
     pokeUrl = picUrl +searchNum.value;
-    fetch(baseURL)
+    fetch(url)
     .then((results) =>{
         return results.json();
     })
@@ -52,6 +52,7 @@ function fetchPokemon(e){
 // }
 
 function displayPoke(){
+    img.style.display = 'block';   
     let pokeFriend = `${pokeUrl}.png`;
     console.log(pokeFriend);
     img.src = pokeFriend;
