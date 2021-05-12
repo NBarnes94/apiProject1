@@ -1,6 +1,7 @@
 body{
     background-color: brown;
     color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .wrapper{
     display: flex;
@@ -37,7 +38,4 @@ form{
     text-align: center;
     text-transform: uppercase;
     color: aliceblue;    
-}
-.image{
-    
 }
