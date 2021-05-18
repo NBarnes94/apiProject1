@@ -2,6 +2,10 @@ body{
     background-color: brown;
     color: white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(./assets/Capture.PNG);
+    background-position: top;
+    background-repeat: none;
+    background-size: cover;
 }
 .wrapper{
     display: flex;
@@ -17,25 +21,38 @@ form{
     display: inline-flex;
     display: flex;
     justify-content: space-around;
+    margin-left: 500px;
+    margin-right: auto;
 }
 
 .submit{
     padding-left: 10p;
-    transform: scale(2);
+    transform: scale(1.3);
+    
 }
 .searchBox{
+    text-align: center;
+    margin-top: 15px;
     margin-bottom: 0;
+    max-width: 1000px;
 }
 .displayResults{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 80px;
+    /* flex-direction: column; */
+}
+.displayResults img{
+    margin-top: -10;
+    transform: scale(.8);
 }
 .name{
-    font-size: 50px;
+    font-size: 35px;
     justify-content: center;
     text-align: center;
     text-transform: uppercase;
     color: aliceblue;    
+    margin-bottom: 0;
 }
